@@ -2,6 +2,17 @@
 
 IAM general information, tips &amp; tricks and Reference URLs. For other topics on AWS, you can refer to [this link](https://mgonzalezo.com).
 
+- [IAM](#iam)
+  - [General_Details](#general_details)
+  - [IAM Policies](#iam-policies)
+  - [Take-away information](#take-away-information)
+  - [IAM AWS Managed Policies](#iam-aws-managed-policies)
+  - [IAM Policies Conditions](#iam-policies-conditions)
+  - [IAM Policies Variables and Tags](#iam-policies-variables-and-tags)
+  - [IAM Roles vs Resource Based Policies](#iam-roles-vs-resource-based-policies)
+
+## General_Details
+
 - Users: long term credentials
 - Groups
 - Roles: short-term credentials, use STS
@@ -17,7 +28,7 @@ IAM general information, tips &amp; tricks and Reference URLs. For other topics 
   - Inline Policies: Policies assigned to one specific user or role, cannot be shared accross users or roles.
   - Resource Based Policies (S3 buckets)
 
-IAM Policies:
+## IAM Policies
 
 1. Anatomy:
     - version
