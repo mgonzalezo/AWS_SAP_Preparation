@@ -1,7 +1,6 @@
 # VPC
 
 - Internet access from a private subnet requires network address translation (NAT).
-- 
 
 ## Lambda on VPC
 
