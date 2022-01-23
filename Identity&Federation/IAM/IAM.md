@@ -78,4 +78,4 @@ IAM general information, tips &amp; tricks and Reference URLs. For other topics 
 - Attach a policy to a resource (S3 bucket policy) or using role as proxy.
   - Using role as proxy: user gives up original permissions.
   - Attach a policy: the principal doesn't have to give up any permissions.
-  - 
+  
