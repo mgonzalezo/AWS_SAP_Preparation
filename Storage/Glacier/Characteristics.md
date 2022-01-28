@@ -28,4 +28,3 @@
 - It has a single storage cost for all data despite how much data you are storing. 
 - Similarly to Amazon S3, there also additional costs such as data transfer,
 - Data transfer into Glacier is free. 
-- 
