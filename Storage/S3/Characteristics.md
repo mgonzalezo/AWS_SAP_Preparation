@@ -75,3 +75,4 @@ Amazon S3 is a fully managed object based storage that is high available, highly
   - AWS CloudTrail: Log files are sent to pre-configured S3 buckets
   - Amazon Cloudfront: Cloudfront origin within a distribution
 
+## Pricing
