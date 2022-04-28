@@ -12,3 +12,11 @@ You can configure a Lambda function to connect to private subnets in a virtual p
 - Lambda creates a Hyperplane ENI the first time a unique subnet and security group combination is defined for a VPC-enabled function in an account.
 - To give internet access to an Amazon VPC-connected Lambda function, route its outbound traffic to a NAT gateway or NAT instance in a public subnet.
 - Lambda functions do not, and cannot, have public IP addresses. You cannot send traffic to the internet, which happens via the VPC’s Internet Gateway, unless you have a public IP.
+
+## General Concepts
+
+- Jumbo frames reduce the TCP/IP overhead of the network traffic.
+
+- VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in your VPC. 
+
+Source: <https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html> 
