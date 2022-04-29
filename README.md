@@ -17,9 +17,11 @@ Please find below the list of Referenced materials for this Guide. I have includ
 7. AWS Free practice questions - https://explore.skillbuilder.aws/
 
 
+## Table of Contents
 
 - [AWS SAP Preparation](#aws-sap-preparation)
   - [Reference Materials](#reference-materials)
+  - [Table of Contents](#table-of-contents)
     - [Application Integration](#application-integration)
       - [AWSOpworks](#awsopworks)
       - [SQS](#sqs)
