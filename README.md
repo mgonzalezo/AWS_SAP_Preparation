@@ -1,8 +1,41 @@
 
 # AWS SAP Preparation
 
-Repository for AWS Solution Architect Professional exam preparation, including theory and practice (hands-on labs).
-Chapters have been categorized based on latest [AWS Solutions Architect Guideline.](https://d1.awsstatic.com/training-and-certification/docs-sa-pro/AWS-Certified-Solutions-Architect-Professional_Exam-Guide.pdf)
+Repository for AWS Solutions Architect Professional (SAP-C02) exam preparation, including theory and practice (hands-on labs).
+
+**Last Updated: January 2025** - Includes latest 2025 AWS service updates and exam changes.
+
+Chapters have been categorized based on the latest [AWS Certified Solutions Architect - Professional (SAP-C02) Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-sa-pro/AWS-Certified-Solutions-Architect-Professional_Exam-Guide.pdf).
+
+## Exam Overview (SAP-C02)
+
+The AWS Certified Solutions Architect - Professional validates advanced technical skills and experience in designing optimized AWS solutions based on the AWS Well-Architected Framework.
+
+### Exam Details
+
+- **Exam Code**: SAP-C02 (replaced SAP-C01 in November 2022)
+- **Format**: 75 questions (65 scored + 10 unscored)
+- **Duration**: 180 minutes (3 hours)
+- **Passing Score**: 750 out of 1000
+- **Cost**: $300 USD
+- **Validity**: 3 years
+
+### Exam Domains and Weightings
+
+| Domain | Weight |
+|--------|--------|
+| Domain 1: Design Solutions for Organizational Complexity | 26% |
+| Domain 2: Design for New Solutions | 29% |
+| Domain 3: Continuous Improvement for Existing Solutions | 25% |
+| Domain 4: Accelerate Workload Migration and Modernization | 20% |
+
+### Key Changes from SAP-C01 to SAP-C02
+
+- **Organizational Complexity** increased from 12.5% to 26% (largest change).
+- Strong focus on **multi-account architecture** using AWS Organizations.
+- **Cost Optimization** removed as standalone domain - integrated across all domains.
+- Alignment with AWS Well-Architected Framework pillars.
+- Emphasis on modern architectures: serverless, containers, generative AI.
 
 ## Reference Materials
 
@@ -17,45 +50,72 @@ Please find below the list of Referenced materials for this Guide. I have includ
 7. AWS Free practice questions - https://explore.skillbuilder.aws/
 
 
+## What's New in 2025
+
+### New Services and Major Updates
+
+- **AWS Lambda Durable Functions** - Run workflows up to 366 days with automatic checkpointing
+- **Amazon Bedrock** - Fully managed foundation models including Amazon Nova
+- **Amazon Nova** - AWS's new generation of foundation models (Micro, Lite, Pro, Premier, Canvas, Reel, Act)
+- **Amazon Q Developer** - AI-powered coding assistant with agentic capabilities
+- **Amazon S3 Vectors** - Native vector storage supporting 2 billion vectors per index
+- **S3 Express One Zone** - 10x faster performance, 80% lower request costs
+- **AWS Graviton5** - 25% better performance, 192 cores, 5x larger L3 cache
+- **Amazon EKS Auto Mode** - Fully automated infrastructure management
+- **Amazon EKS Hybrid Nodes** - On-premises and edge nodes in EKS clusters
+- **Aurora Blue/Green Deployments** - Safe updates for Global Databases
+- **RDS Storage Expansion** - SQL Server and Oracle now support up to 256 TiB (4x increase)
+
+### Deprecated Services
+
+- **AWS OpsWorks** - End of life May 2024 (migrate to Systems Manager, CloudFormation, or ECS/EKS)
+- **Amazon Lex V1** - No new resources after March 2025, all requests fail September 2025
+- **AWS CodeCommit** - Discontinued for new accounts June 2024
+- **AWS Cloud9** - Closed to new customers July 2024
+- **Amazon QLDB** - Deprecated July 2025
+
 ## Table of Contents
 
-- [AWS SAP Preparation](#aws-sap-preparation)
-  - [Reference Materials](#reference-materials)
-  - [Table of Contents](#table-of-contents)
-    - [Application Integration](#application-integration)
-      - [AWSOpworks](#awsopworks)
-      - [SQS](#sqs)
-    - [Billing_Cost_Mgmt](#billing_cost_mgmt)
-      - [AWS_Cost_Usage_Report](#aws_cost_usage_report)
-    - [Compute](#compute)
-      - [AWS_ECS](#aws_ecs)
-        - [Task_definitions](#task_definitions)
-      - [ELB](#elb)
-        - [Application Load Balancer:](#application-load-balancer)
-      - [Placement Group](#placement-group)
-    - [Databases](#databases)
-      - [Amazon_Neptune](#amazon_neptune)
-      - [Amazon_Aurora](#amazon_aurora)
-        - [Amazon_Aurora_Global_Database](#amazon_aurora_global_database)
-      - [Caching Strategies](#caching-strategies)
-      - [Amazon RDS](#amazon-rds)
-        - [Amazon RDS storage types](#amazon-rds-storage-types)
-        - [Troubleshooting Scenario](#troubleshooting-scenario)
-      - [AWS DynamoDB](#aws-dynamodb)
-        - [DynamoDB Accelerator](#dynamodb-accelerator)
-        - [Global Tables:](#global-tables)
-        - [DynamoDB conditional writes](#dynamodb-conditional-writes)
-      - [Amazon Redshift](#amazon-redshift)
-    - [Developer_tools](#developer_tools)
-      - [AWS_CodeDeploy](#aws_codedeploy)
-    - [End_user_Computing](#end_user_computing)
-      - [AppStream2_0](#appstream2_0)
-      - [AWS_WorkSpaces](#aws_workspaces)
-    - [Machine_Learning](#machine_learning)
-      - [Amazon Lex](#amazon-lex)
-      - [Amazon Comprehend](#amazon-comprehend)
-      - [Amazon Polly](#amazon-polly)
-      - [Amazon Transcribe](#amazon-transcribe)
+### Application Integration
+- [AWS OpsWorks](Application%20_Integration/OpsWorks.md) - **DEPRECATED 2024**
+- [Amazon SQS](Application%20_Integration/SQS.md)
+
+### Billing and Cost Management
+- [AWS Cost & Usage Report](Billing_Cost_Mgmt/Cost_Usage_Report.md)
+
+### Compute
+- [Amazon ECS](Compute/ECS.md) - Elastic Container Service
+- [Amazon EKS](Compute/EKS.md) - Elastic Kubernetes Service **NEW 2025**
+  - EKS Auto Mode
+  - EKS Hybrid Nodes
+- [AWS Lambda](Compute/Lambda.md) - **UPDATED 2025** with Durable Functions
+- [Elastic Load Balancing](Compute/ELB.md) - ALB, NLB, CLB
+- [AWS Graviton Processors](Compute/Graviton.md) - **NEW 2025** Graviton4 & Graviton5
+- [EC2 Placement Groups](Compute/Placementgroup.md)
+
+### Databases
+- [Amazon Neptune](Databases/AmazonNeptune.md) - Graph database
+- [Amazon Aurora](Databases/Aurora.md) - **UPDATED 2025** with Blue/Green Deployments
+- [Amazon RDS](Databases/RDS.md) - **UPDATED 2025** with 256 TiB storage
+- [Caching Strategies](Databases/Cache.md) - ElastiCache patterns
+- [Amazon DynamoDB](Databases/DynamoDB.md)
+- [Amazon Redshift](Databases/RedShift.md)
+
+### Developer Tools
+- [AWS CodeDeploy](Developer_tools/CodeDeploy.md)
+- [Amazon Q Developer](Developer_tools/Q_Developer.md) - **NEW 2025** AI coding assistant
+
+### End User Computing
+- [Amazon AppStream 2.0](End_user_Computing/AppStream.md)
+- [Amazon WorkSpaces](End_user_Computing/WorkSpaces.md)
+
+### Generative AI and Machine Learning
+- [Amazon Bedrock](Machine_Learning/Bedrock.md) - **NEW 2025** Foundation models & Amazon Nova
+- [Amazon SageMaker AI](Machine_Learning/SageMaker.md) - **NEW 2025** with serverless customization
+- [Amazon Lex](Machine_Learning/aws_Lex.md) - **UPDATED 2025** V1 deprecation notice
+- [Amazon Comprehend](Machine_Learning/Comprehend.md)
+- [Amazon Polly](Machine_Learning/Polly.md)
+- [Amazon Transcribe](Machine_Learning/Transcribe.md)
     - [Management_Goverment](#management_goverment)
       - [The AWS Service Catalog](#the-aws-service-catalog)
       - [AWS CloudFormation:](#aws-cloudformation)

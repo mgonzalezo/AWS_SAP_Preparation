@@ -1,11 +1,62 @@
 # Amazon RDS
 
-- Oracle RAC is not supported by RDS. **important**
-- DB2 is supported by RDS (All IBM Websphere products are supported by AWS) 
-- An Oracle Real Application Clusters (RAC) One Node option provides virtualized servers on a single machine. 
-- There is no automatic way to promote the read replica on the backup region as the master database, and when you do,  when you do, the RDS instance will reboot. 
-- You can promote the read replica directly to a standalone DB instance. It is not necessary to make a snapshot and recreate the cluster
+- Managed relational database service supporting multiple engines.
+- Automated backups, patching, and monitoring.
+- Multi-AZ deployment for high availability.
+- Read replicas for read scalability.
+
+## Supported Database Engines
+
+- Amazon Aurora (MySQL and PostgreSQL-compatible).
+- MySQL.
+- PostgreSQL.
+- MariaDB.
+- Oracle.
+- Microsoft SQL Server.
+- IBM Db2.
+
+## Important Limitations
+
+- **Oracle RAC is not supported by RDS** - use Oracle on EC2 for RAC.
+- DB2 is supported by RDS (all IBM Websphere products supported by AWS).
+- Oracle Real Application Clusters (RAC) One Node provides virtualized servers on single machine.
 - MySQL does not support auto scaling for read replicas.
+- No automatic promotion of read replica in backup region as master database.
+- When promoting read replica, RDS instance will reboot.
+- Can promote read replica directly to standalone DB instance (no snapshot needed).
+
+## RDS Storage Enhancements (2025)
+
+### Increased Storage Capacity
+
+- **RDS for SQL Server**: Increased from 64 TiB to 256 TiB (4x increase).
+- **RDS for Oracle**: Increased from 64 TiB to 256 TiB (4x increase).
+- 4x improvement in IOPS performance.
+- 4x improvement in I/O bandwidth.
+
+### RDS for SQL Server Optimize CPUs (2025)
+
+- Reduce costs by up to 55% by optimizing CPU core count.
+- Useful for SQL Server licensing (licensed per core).
+- Maintain same memory and storage while reducing cores.
+
+## AWS Organizations Integration (2025)
+
+### Upgrade Rollout Policy
+
+- Control automatic minor version upgrades across multiple AWS accounts.
+- Eliminates operational overhead of manual coordination across hundreds of resources.
+- Test upgrades in less critical environments before production rollout.
+- Centralized management for compliance and consistency.
+
+### Supported RDS Engines
+
+- RDS for MySQL.
+- RDS for PostgreSQL.
+- RDS for MariaDB.
+- RDS for SQL Server.
+- RDS for Oracle.
+- RDS for Db2.
 
 ## Amazon RDS storage types
 

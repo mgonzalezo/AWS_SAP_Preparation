@@ -1,8 +1,22 @@
-# AWS - OpsWorks
+# AWS OpsWorks
 
-- Let you use Chef and Puppet to automate how servers are configured, deployed, and managed across
-your Amazon EC2 instances or on-premises compute environments. 
-- It can’t deploy AWS Lambda applications.
-- AWS OpsWorks Stacks automatically installs the latest updates during setup, after an instance finishes booting. 
-- AWS OpsWorks Stacks does not automatically install updates after an instance is online, to avoid interruptions such as restarting application servers. Instead, you manage updates to your online instances yourself, so you can minimize any disruptions.
-- On Linux-based instances in Chef 11.10 or older stacks, run the Update Dependencies stack command, which installs the current set of security patches and other updates on the specified instances.
+**⚠️ DEPRECATED - End of Life May 2024**
+
+AWS OpsWorks reached end of life on May 26, 2024. AWS recommends migrating to alternative services.
+
+## Migration Paths
+
+- **AWS Systems Manager**: For configuration management and automation.
+- **AWS CloudFormation**: For infrastructure as code.
+- **Amazon ECS/EKS**: For containerized applications.
+- **Third-party tools**: Chef Automate, Puppet Enterprise (self-hosted on EC2).
+
+## Historical Information (No longer applicable)
+
+- Allowed use of Chef and Puppet to automate server configuration, deployment, and management.
+- Supported Amazon EC2 instances and on-premises compute environments.
+- Could not deploy AWS Lambda applications.
+- OpsWorks Stacks automatically installed updates during setup.
+- Did not automatically install updates after instance was online to avoid interruptions.
+
+**Note**: For exam purposes, be aware this service is deprecated. Questions may reference migration scenarios from OpsWorks to modern alternatives.
